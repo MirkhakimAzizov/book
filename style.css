@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background-color: #F8FAFD;
+}
+
+.card {
+    max-width: 18rem;
+}
+
+.card__img {
+    background-color: #F8FAFD;
+}
+
+.card-img-top {
+    max-height: 14rem;
+}
+
+.pagenation {
+    max-width: 284px;
+}
+
+.pagenation__btn {
+    width: 40px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #DFE3E8;
+}
+
+.pagenation__btn:active {
+    border: 1px solid rgba(13, 117, 255, 1) !important;
+    color: rgba(13, 117, 255, 1) !important;
+}
+
+.pagenation__box {
+    width: 284px;
+    overflow-x: hidden;
+}
+
+.pagenation__box__inner {
+    transform: translateX(2px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal-content {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login {
+    height: 100vh !important;
+    /* background-image: url(./images/book.svg); */
+    background-color: aqua;
+    background-size: cover;
+}
+
+.login__inner {
+    max-width: 300px;
+}
+
+input::placeholder {
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-size: 14px;
+}
+
+.login-username::after {
+    content: "";
+    position: relative;
+    top: -32.5px;
+    left: 10px;
+    width: 20px !important;
+    height: 20px !important;
+    display: block !important;
+    background-image: url(./images/user.svg);
+}
+
+.login-password::after {
+    content: "";
+    position: relative;
+    top: -32.5px;
+    left: 10px;
+    width: 20px !important;
+    height: 20px !important;
+    display: block !important;
+    background-image: url(./images/lock.svg);
+}
