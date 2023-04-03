@@ -44,7 +44,7 @@
 }
 
 .pagenation__box__inner {
-    transform: translateX(2px);
+    transform: translateX(0px);
     transition: transform 0.3s ease-in-out;
 }
 

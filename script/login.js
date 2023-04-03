@@ -9,7 +9,6 @@ $('.login__form').addEventListener('submit', evt => {
     let email = $('.login-username').value;
     let password = $('.login-password').value;
 
-    // console.log(pass, username);
     fetch('https://reqres.in/api/login', {
         method: 'post',
         body: JSON.stringify({
