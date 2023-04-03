@@ -6,15 +6,23 @@ function $(selector, parrent = document) {
 
 $('.login__form').addEventListener('submit', evt => {
     evt.preventDefault();
-    let username = $('.login-username').value;
-    let pass = $('.login-password').value;
+    let email = $('.login-username').value;
+    let password = $('.login-password').value;
 
-    console.log(pass, username);
+    // console.log(pass, username);
+    fetch('https://reqres.in/api/login', {
+        method: 'post',
+        body: JSON.stringify({
+            email,
+            password,
+        }),
+        headers: {
+            'Content-type': 'Application/json',
+        },
+    }).then(res => res.json()).then(data => {
+        console.log(data);
+        localStorage.setItem('token', data.token);
+        window.location.href = '../index.html';
+    })
 
 })
-
-async function loginData() {
-    const data = fetch(`https://reqres.in/api/login`);
-    const res = await data;
-    console.log(res);
-}

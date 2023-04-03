@@ -52,6 +52,11 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
+.login-main {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
 .login {
     height: 100vh !important;
     background-color: aqua;
@@ -61,7 +66,7 @@
 }
 
 .login__form {
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .login__inner {
