@@ -54,9 +54,14 @@
 
 .login {
     height: 100vh !important;
-    /* background-image: url(./images/book.svg); */
     background-color: aqua;
     background-size: cover;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+}
+
+.login__form {
+    margin-top: 150px;
 }
 
 .login__inner {
@@ -69,7 +74,7 @@ input::placeholder {
     font-size: 14px;
 }
 
-.login-username::after {
+.label-user::after {
     content: "";
     position: relative;
     top: -32.5px;
@@ -77,10 +82,10 @@ input::placeholder {
     width: 20px !important;
     height: 20px !important;
     display: block !important;
-    background-image: url(./images/user.svg);
+    background-image: url(./images/user.svg) !important;
 }
 
-.login-password::after {
+.label-pass::after {
     content: "";
     position: relative;
     top: -32.5px;
@@ -88,5 +93,5 @@ input::placeholder {
     width: 20px !important;
     height: 20px !important;
     display: block !important;
-    background-image: url(./images/lock.svg);
+    background-image: url(./images/lock.svg) !important;
 }
